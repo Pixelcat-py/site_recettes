@@ -21,9 +21,8 @@ body{
             
             div.contenu{
                 background-color: white;
-                margin: 0 10% 80px 10%;
-                padding: 30px;
-                min-width: 350px;
+                margin: 40px 8px 40px 8px;
+                padding: 0 8px 20px 8px;
                 box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.1);
             }
             p.description{
@@ -61,13 +60,14 @@ body{
                 position: absolute; 
                 bottom: 0; 
                 width: 100%; 
-                height: 80px;
+                height: 50px;
                 background-color: #6c829dc0; /* c0 pour l'opacité */
                 color: #ffffff;
+                font-size: 12px;
             }
             table.info td{
                 text-align: center;
-                font-size: 14px;
+                font-size: 12px;
                 vertical-align: top;
             }
             table.info th{
@@ -83,7 +83,7 @@ body{
                 background-color: lightgrey;
             }
             div.colonne{
-                width: 45%;
+                width: 100%;
                 margin-top: 20px;
             }
             div.colonne h2{
@@ -95,10 +95,6 @@ body{
             }
             div.colonne1{
                 display: inline-block;
-                margin-right: 10%;
-            }
-            div.colonne2{
-                float: right;
             }
             div.colonne1 p{
                 text-align: center;
@@ -132,4 +128,40 @@ body{
             table.preparation tr{
                 height: 40px;
             }
+
+/* Styles pour ordinateur */
+@media only screen and (min-width: 768px) {
+    div.contenu{
+        min-width: 350px;
+        margin: 0 10% 80px 10%;
+        padding: 30px;
+    }
+    table.info{
+                height: 80px;
+            }
+            table.info td{
+                font-size: 14px;
+            }
+            table.info th{
+                font-size: 16px;
+            }
+            div.colonne{
+                width: 45%;
+                margin-top: 20px;
+            }
+            div.colonne1{
+                margin-right: 10%;
+            }
+            div.colonne2{
+                float: right;
+            }
+}
+@media only screen and (min-width: 900px){
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
+
+}
             
